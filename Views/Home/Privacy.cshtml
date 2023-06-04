@@ -1,0 +1,24 @@
+﻿@model calucater.Models.post
+@{
+    Layout = null;
+}
+
+<form asp-action="Privacy" method="post">
+    <div>
+        <label asp-for="num1">num1:</label>
+        <input asp-for="num1"/>
+    </div> 
+    <div>
+        <label asp-for="state">state:</label>
+        <input asp-for="state"/>
+    </div> 
+    <div>
+        <label asp-for="num2">num2:</label>
+        <input asp-for="num2"/>
+    </div>
+    <div>
+    <h1>@ViewBag.res2</h1>
+    </div>
+    <input type="submit" value="submit" />
+    
+</form>
